@@ -1,0 +1,31 @@
+{
+    "name": "backend",
+    "version": "1.0.0",
+    "description": "Backend development test task",
+    "author": "Andrei <andrei.bonnd@gmail.com",
+    "license": "Apache License - Version 2.0",
+    "private": true,
+    "type": "module",
+    "engines": {
+        "node": ">=14.5.0"
+    },
+    "scripts": {
+        "start": "node ./sources/server.js",
+        "develop": "nodemon --config ./configurations/nodemon.json ./sources/server.js"
+    },
+    "devDependencies": {
+        "@types/node": "^16.3.1",
+        "nodemon": "^2.0.6",
+        "prettier": "^2.1.2"
+    },
+    "dependencies": {
+        "@koa/cors": "^3.1.0",
+        "@koa/router": "^10.0.0",
+        "dotenv-defaults": "^2.0.1",
+        "joi": "^17.4.1",
+        "koa": "^2.13.0",
+        "koa-bodyparser": "^4.3.0",
+        "node-fetch": "^2.6.1",
+        "redis": "^3.1.2"
+    }
+}
